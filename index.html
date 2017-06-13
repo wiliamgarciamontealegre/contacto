@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Titulo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+</head>
+<style>
+    .sweet-alert input[type="text"]{
+        display: none;
+    }
+
+    .letra_titulo_registo h1{
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 500;
+        color: #9B3D83;
+        margin: 0px;
+        font-size: 28px;
+    }
+
+    .letra_titulo_registo h3{
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 300;
+        color: #9B3D83;
+        margin: 0px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .letra_titulo_registo{
+        text-align: center;
+    }
+    .borde_titulo_superior h1{
+        color: #11AFB5;
+        font-size: 18px;
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 300;
+        margin: 0;
+    }
+    .borde_titulo_superior{
+        position: relative;
+        border: 1px solid #9B3D83;
+        text-align: center;
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+    .cuadro_mas_border{
+        position: absolute;
+        left: -20px;
+        top: -1px;
+        bottom: 0;
+        background-color: #872870;
+        border-radius: 20px;
+        width: 38px;
+        color: #fff;
+        font-size: 24px;
+        height: 37px;
+        line-height: 35px;
+    }
+    .fondo_registro_input{
+        background-color: #9B3D83;
+        padding: 15px 30px 30px 30px;
+    }
+    .fondo_registro_input label{
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 300;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .fondo_registro_input input{
+        width: 100%;
+        background-color: #BA74AA;
+        border-radius: 0 !important;
+        color: #fff;
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        height: 34px;
+
+    }
+    .fondo_registro_input select{
+        width: 100%;
+        background-color: #BA74AA;
+        border-radius: 0 !important;
+        color: #fff;
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        height: 34px;
+    }
+    .fondo_registro_input input:focus{
+        background-color: #BA74AA !important;
+    }
+    .imagen_mas{
+        text-align: center;
+    }
+    .imagen_mas img{
+        width: 250px;
+    }
+    .letra_contenido p{
+        color: #882B72;
+        font-size: 16px;
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 300;
+    }
+    .letra_contenido label{
+        color: #9B4185;
+        font-size: 12px;
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    .letra_contenido button{
+        background-color: #D27B2C;
+        width: 100%;
+        padding: 20px 0;
+        color: #fff;
+        border: none;
+        font-family: proxima-nova,Arial, sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        margin-top: 30px;
+        border-radius: 0;
+
+    }
+    .letra_contenido input{
+        margin-top: 1px;
+    }
+    .padding_container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media(max-width:767px){
+        .borde_titulo_superior h1{
+            font-size: 16px;
+        }
+        .letra_titulo_registo h1{
+            font-size: 22px;
+        }
+        .text_center_movil{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container padding_container">
+        <div class="row">
+
+            <div class="clearfix"></div>
+
+            <form action="http://www.telotraigo.com/como-funciona-tlt/" method="POST" id="registro_form">
+
+                <div class="col-md-12 fondo_registro_input col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Nombres *</label>
+                            <input type="text" name="nombres" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label>Primer apellido *</label>
+                            <input type="text" name="primer_apellido" required />
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                            <label>Segundo apellido *</label>
+                            <input type="text" name="segundo_apellido" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label>Correo electrónico *</label>
+                            <input type="text" name="correo_electronico" required />
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-md-6">
+                            <label>Tipo de identificación *</label>
+                            <select class="selectpicker" name="tipo_de_identificacion" >
+                                <option value="cedula" selected>Cédula de ciudadanía</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="cedula_extranjeria">Cédula de extranjería</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Número de identificación *</label>
+                            <input type="text" name="numero_de_identificacion" required />
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                            <label>Dirección de envío *</label>
+                            <input type="text" name="direccion" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label>País *</label>
+                            <select class="selectpicker" name="pais">
+                                <option value="CO" selected>Colombia</option>
+                            </select>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                            <label>Departamento *</label>
+                            <select>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Antioquia">Antioquia</option>
+                                <option value="Arauca">Arauca</option>
+                                <option value="Atlántico">Atlántico</option>
+                                <option value="Bogotá">Bogotá</option>
+                                <option value="Bolívar">Bolívar</option>
+                                <option value="Boyacá">Boyacá</option>
+                                <option value="Caldas">Caldas</option>
+                                <option value="Caquetá">Caquetá</option>
+                                <option value="Casanare">Casanare</option>
+                                <option value="Cauca">Cauca</option>
+                                <option value="Cesar">Cesar</option>
+                                <option value="Chocó">Chocó</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Cundinamarca">Cundinamarca</option>
+                                <option value="Guainía">Guainía</option>
+                                <option value="Guaviare">Guaviare</option>
+                                <option value="La Guajira">La Guajira</option>
+                                <option value="Magdalena">Magdalena</option>
+                                <option value="Meta">Meta</option>
+                                <option value="Nariño">Nariño</option>
+                                <option value="Norte de Santander">Norte de Santander</option>
+                                <option value="Putumayo">Putumayo</option>
+                                <option value="Quindío">Quindío</option>
+                                <option value="Risaralda">Risaralda</option>
+                                <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                                <option value="Santander">Santander</option>
+                                <option value="Sucre">Sucre</option>
+                                <option value="Tolima">Tolima</option>
+                                <option value="Valle del Cauca">Valle del Cauca</option>
+                                <option value="Vaupés">Vaupés</option>
+                                <option value="Vichada">Vichada</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Ciudad *</label>
+                            <input type="text" name="ciudad" class="autocomplete" id="ciudad" required />
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                            <label>Teléfono celular *</label>
+                            <input type="number" name="telefono_celular"  required />
+                        </div>
+                        <div class="col-md-6">
+                            <label>Teléfono fijo </label>
+                            <input type="text" name="telefono_fijo" />
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="col-md-12">
+                            <label style="margin-top: 15px;text-align: center; display: block">Los campos con * son obligatorios</label>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="letra_contenido">
+                    <p>Somos responsables del uso confidencial de su información personal y no se proporcionara esta a terceros de acuerdo a nuestras políticas de privacidad</p>
+
+                    <input type="checkbox" required="">
+
+                    <label>
+                        HE LEÍDO Y ACEPTO LOS <a target="_blank" href="http://www.telotraigo.com/documentos/terminos-y-condiciones.pdf" style="color:#9B3D83 !important"><strong>TÉRMINOS Y CONDICIONES</strong></a>
+                    </label>
+                </div>
+                <button type="submit" id="btn_submit">REGISTRARME</button>
+                <p id="text_saving" style="display: none;">Estamos enviando sus datos, por favor espere</p>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
